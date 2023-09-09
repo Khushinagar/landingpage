@@ -1,0 +1,144 @@
+
+.main{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(33, 175, 168, 0.521);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.521)),url(../Assets/home.jpg);
+    background-size: cover;
+    background-position: center;
+
+.searchbox{
+        height: 4vh;
+        width: 16vw;
+        background-color: transparent;
+        border: 2px solid rgb(245, 241, 241);
+        border-radius: 10px;
+        margin-top: 2vw;
+       
+>i{
+        //  padding: .1vw;
+        font-size: 300;
+        font-weight: 700;
+        display: flex;
+        color: antiquewhite;
+p{
+         font-size: small;
+        font-weight: 100;
+        color: antiquewhite;    
+}
+}
+}
+    .right-div{
+        position: absolute;
+        top: 25%;
+        left: 10%;
+        
+       h1{
+        color: white;
+        text-transform: uppercase;
+        font-size: 3vw;
+        >span{
+            
+            font-size: 6vw;
+
+            >img{
+                height: 20vh;
+                width: 11vw;
+                font-weight: 900;
+                
+
+            }
+        }
+        &:hover{
+            transition: all 1s;
+            color: lightseagreen;
+           
+        }
+       }
+       p{
+        color: white;
+        text-align: justify;
+        width: 40vw;
+        margin-top: 1.5vw;
+        font-size: 1.8vw;
+
+        
+       }
+    }
+    }
+    .btn-dark{
+     border: none;
+    padding: .5vw;
+    margin: 2vw;
+    margin-top: 1.7vw;
+    border-radius: 10px;
+    width: 5vw;
+    color: lightseagreen;
+    &:hover{
+        transition: all  0.5s ;
+        background-color: transparent;
+        
+
+        
+    }
+    }
+.btn-signup{
+    background-color: lightseagreen;
+    color: white;
+
+}
+.btn-search{
+    height: 4vh;
+    width: 16vw;
+    background-color: transparent;
+    border: 2px solid rgb(245, 241, 241);
+    border-radius: 10px;
+    margin-top: 2vw;
+    text-align: left;
+    color: white;
+}
+
+@media (max-width:600px){
+    .main{
+        height: 100vh;
+        width: 100vh;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.521)),url(../Assets/home.jpg);
+        background-size: cover;
+    background-position: center;
+
+    }
+    .right-div{ 
+       h1{
+        font-size: 4vh;
+            >img{
+                height: 7vh;
+                width: 25vw;
+                font-weight: 900;
+        
+            }
+        }
+        &:hover{
+            transition: all 1s;
+            color: lightseagreen;
+           
+        }
+       
+       p{
+        color: white;
+        text-align: justify;
+        width: 60vw;
+        margin-top: 1.5vw;
+        font-size: 2vw;
+
+        
+       }
+       .btn-dark{
+        width: 15vw;
+       }
+    }
+    
+    
+
+    
+    
+}

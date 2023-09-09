@@ -1,0 +1,79 @@
+.form{
+    background-color: lightseagreen;
+    height: 100vh;
+    width: 100%;
+    h1{
+        color: white;
+        font-size: 5vw;
+        margin-left: 2vw;
+       
+    }
+}
+
+main{
+    position: absolute;
+    top: 10vw;
+    left: 38vw;
+}
+form{ 
+    label{
+        width: 8vw;
+        color:white;
+        font-weight: 500;
+    }
+    input{
+        align-self: stretch;
+        width: 20vw;
+        // height: 2.2vw;
+        margin: 1vw;
+        text-align: justify;
+    }
+}
+
+
+.btn{
+    background-color: white;
+    color: lightseagreen;
+    font-size: large;
+    font-weight: 900;
+    border: none;
+}
+
+
+.navbar{
+    h2{
+      color: white;
+    }
+    ul.list li a{
+      color: white;
+    }
+  }
+
+
+  @media (max-width:600px) {
+    
+    main{
+        position: absolute;
+        top: 20vh;
+        left: 25vw;
+    }
+    form{ 
+        margin-top: 4vh;
+        label{
+           
+            width: 25vh;
+            font-weight: 400;
+        }
+        input{
+            align-self: stretch;
+            width: 28vh;
+            margin: 1.5vh;
+            text-align: justify;
+        }
+    }
+    .btn{
+        font-size: large;
+        margin-top: 3vh;
+    }
+    
+}
