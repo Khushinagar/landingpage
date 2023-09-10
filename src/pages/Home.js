@@ -4,7 +4,7 @@ import img2 from '../Assets/image-removebg-preview (1).png'
 import { Link } from 'react-router-dom'
 
 
-const Home = () => {
+const Home = (props) => {
      
   return (
     <>
@@ -12,7 +12,7 @@ const Home = () => {
     <div className='main'>
     <div className='content'>
     <div className='right-div'>
-        <h1><span>e</span>xplore <span>t</span>he <span>w</span><span><img src={img2} alt="compass"></img></span><span>rld!!!</span></h1>
+        <h1><span>e</span>xplore <span>t</span>he <span>w</span><span><img src={img2} alt="compass"></img></span><span>rld</span></h1>
         {/* <div className='searchbox'><i class="ri-search-2-line">Search More...</i></div>  */}
        {/* <button type='search' className='btn-search btn-light'><i class="ri-search-2-line"></i>search more...</button> */}
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
