@@ -50,7 +50,7 @@ return (
 <Navbar />
 <div className='form'>
     <main>
-        <h1>Contact Form</h1>
+        <h1>Contact Us</h1>
     <form method='POST'>
 <div>
         <label>Name</label>
@@ -61,6 +61,7 @@ return (
         placeholder='enter your name' 
         value={userData.Name} 
         onChange={postUserData}
+        className='input-contact'
         />
 </div>
 <div>
@@ -71,6 +72,7 @@ return (
          placeholder='enter your city'
          value={userData.City}
           onChange={postUserData}
+          className='input-contact'
          />
 </div>
 <div>
@@ -81,6 +83,7 @@ return (
          placeholder='enter your mail-id'
          value={userData.Email} 
          onChange={postUserData}
+         className='input-contact'
 
          />
 
@@ -92,6 +95,7 @@ return (
         placeholder='enter your message'
         value={userData.Message} 
         onChange={postUserData}
+        className='input-contact'
         />
 </div>
 <button type='submit' className='btn btn-primary' onClick={submitData}>Submit</button>

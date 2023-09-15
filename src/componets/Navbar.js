@@ -15,6 +15,7 @@ return (
                 <li > <Link path to='/Destination'>Destination</Link></li>
                 <li > <Link path to='/Contact Us'>Contact Us</Link></li>
                 <li > <Link path to='/Blog'>Blog</Link></li>
+                <li > <Link path to='/Profile'>Profile</Link></li>
             </ul>
 </div>   
        <i onClick={()=>setDisplay(!display)} class="ri-menu-3-line "></i>

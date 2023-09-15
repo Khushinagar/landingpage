@@ -16,17 +16,22 @@ main{
     left: 38vw;
 }
 form{ 
+    
     label{
-        width: 8vw;
+        width: 10vw;
         color:white;
         font-weight: 500;
+        font-size: 1.5vw;
     }
-    input{
+    .input-contact{
         align-self: stretch;
         width: 20vw;
-        // height: 2.2vw;
         margin: 1vw;
         text-align: justify;
+        border-radius: 7px;
+        border: none;
+        padding: .5vw;
+
     }
 }
 

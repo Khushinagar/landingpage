@@ -6,7 +6,9 @@ const Blog = () => {
     <>
     <Navbar />
     <div className='blog'>
-        
+     
+      
+       
     </div>
     </>
   )

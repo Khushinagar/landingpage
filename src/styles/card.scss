@@ -1,0 +1,31 @@
+.content-section{
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+    justify-content: space-evenly;
+}
+
+
+.card-container{
+    width: 20vw;
+    border-radius:1px ;
+    box-shadow: 0px 10px 8px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: fit-content;
+    margin: 5vw;
+    background:white;
+
+    &:hover{
+        transform: translateY(0.5vh);
+        box-shadow: 0.5rem 0.75rem 1.5rem #bbbbbb;
+    }
+}
+
+.card-img{
+    width: 100%;
+
+    
+}
+
+

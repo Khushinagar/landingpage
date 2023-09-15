@@ -1,0 +1,21 @@
+.img-grid{
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px 100px;
+    justify-content: space-evenly;
+}
+
+.card-grid{
+    width: 15vw;
+    border-radius:1px ;
+    box-shadow: 0px 10px 8px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: fit-content;
+    margin: 1vw;
+    background:white;
+}
+
+.grid-img{
+    width: 100%;
+}
