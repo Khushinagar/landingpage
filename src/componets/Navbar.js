@@ -6,17 +6,17 @@ const [display, setDisplay] = useState(false)
 return (
 <>
 <div className='navbar'>
-<div className='right-nav'>
-    <h2> Logo</h2>
-</div>
-        <div className= {display ?'left-nav':'left-nav-phone'}>
-                <ul className='list'>
-                <li > <Link path to='/'>Home</Link></li>
-                <li > <Link path to='/Destination'>Destination</Link></li>
-                <li > <Link path to='/Contact Us'>Contact Us</Link></li>
-                <li > <Link path to='/Blog'>Blog</Link></li>
-                <li > <Link path to='/Profile'>Profile</Link></li>
-            </ul>
+    <div className='right-nav'>
+        <h2> Logo</h2>
+    </div>
+<div className= {display ?'left-nav':'left-nav-phone'}>
+    <ul className='list'>
+        <li> <Link path to='/'>Home</Link></li>
+        <li> <Link path to='/Destination'>Destination</Link></li>
+        <li> <Link path to='/Contact Us'>Contact Us</Link></li>
+        <li> <Link path to='/Blog'>Blog</Link></li>
+        <li> <Link path to='/Profile'>Profile</Link></li>
+    </ul>
 </div>   
        <i onClick={()=>setDisplay(!display)} class="ri-menu-3-line "></i>
 </div> 

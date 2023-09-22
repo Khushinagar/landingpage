@@ -1,6 +1,5 @@
 import React, {useState} from 'react'
 import Navbar from '../componets/Navbar'
-
 const Contact = () => {
         const [userData, setUserData] = useState(
         {

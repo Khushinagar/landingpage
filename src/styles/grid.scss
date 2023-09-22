@@ -1,21 +1,37 @@
 .img-grid{
     display: grid;
-    grid-template-columns: 100px 100px 100px 100px 100px;
+    grid: 180px / auto auto auto auto auto;
+    grid-gap: 1px;
     justify-content: space-evenly;
+    margin-top: 3vw;
+   
+   
+    
 }
 
 .card-grid{
-    width: 15vw;
-    border-radius:1px ;
-    box-shadow: 0px 10px 8px;
+    width: 17vw;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
     height: fit-content;
-    margin: 1vw;
     background:white;
+    margin-top: .5vh;
+    margin-bottom: .5vh;
 }
 
 .grid-img{
+    height: 27vh;
     width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    &:hover{
+        transform: translateY(0.5vh);
+        box-shadow: 0.5rem 0.75rem 1.5rem #bbbbbb;
+        transition: all 1s;
+        overflow: scroll;
+     
+        
+    }
+    
 }

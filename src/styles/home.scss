@@ -1,109 +1,80 @@
-
 .main{
     height: 100vh;
-    
-    width: 100vw;
+    width: 100%;
     background-color: rgba(33, 175, 168, 0.521);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.521)),url(../Assets/home.jpg), ;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.521)),url(../Assets/23.jpg), ;
     background-size: cover;
     background-position: center;
-
-.searchbox{
-        height: 4vh;
-        width: 16vw;
-        background-color: transparent;
-        border: 2px solid rgb(245, 241, 241);
-        border-radius: 10px;
-        margin-top: 2vw;
-       
->i{
-        //  padding: .1vw;
-        font-size: 300;
-        font-weight: 700;
-        display: flex;
-        color: antiquewhite;
-p{
-         font-size: small;
-        font-weight: 100;
-        color: antiquewhite;    
+    // border: 10px   solid lightseagreen;
 }
+
+.content{
+    display: flex;
+    justify-content: space-evenly;
 }
+.right-div{
+    height: 100vh;
+    width: 50%;
+        // background-color: black;
 }
-    .right-div{
-        position: absolute;
-        top: 25%;
-        left: 10%;
-        
-       h1{
-        color: white;
-        text-transform: uppercase;
-        font-size: 3vw;
-        >span{
-            
-            font-size: 6vw;
-
-            >img{
-                height: 20vh;
-                width: 11vw;
-                font-weight: 900;
-                
-
-            }
-        }
-        &:hover{
-            transition: all 1s;
-            color: lightseagreen;
-           
-        }
-       }
-       p{
-        color: white;
-        text-align: justify;
-        width: 40vw;
-        margin-top: 1.5vw;
-        font-size: 1.8vw;
-
-        
-       }
-    }
-    }
-    .btn-dark{
-     border: none;
-    padding: .5vw;
-    // margin: 2vw;
-    // margin-top: 1.7vw;
-    border-radius: 10px;
-    width: 5vw;
+.right-div-content{
+    position: absolute;
+    top: 25vh;
+    left: 5%;
+h1{
+    color: white;
+    text-transform: uppercase;
+    font-size: 2vw;
+>span{
+    font-size: 4vw;
+>img{
+    height: 17vh;
+    width: 8vw;
+    font-weight: 900;
+}}
+&:hover{
+    transition: all 1s;
     color: lightseagreen;
-    &:hover{
-        transition: all  0.5s ;
-        background-color: transparent;
-        
-
+}}
+p{
+    color: white;
+    text-align: justify;
+    width: 40vw;
+    margin-top: 1.5vw;
+    font-size: 1.8vw;
+}
+}
+.left-div{
+        height: 98vh;
+        width: 50%;
+        // background-color: pink;
         
     }
+.left-img{
+        position: absolute;
+        top: 20vh;
+        left: 50%;
     }
-.btn-signup{
-    background-color: lightseagreen;
-    color: white;
+.carousel-img{
+        height: 70vh;
+        width: 90%; 
+        }
+.c-image{
+    height: fit-content;
+    width: fit-content;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px 5px;
+} 
 
-}
-.btn-search{
-    height: 4vh;
-    width: 16vw;
-    background-color: transparent;
-    border: 2px solid rgb(245, 241, 241);
-    border-radius: 10px;
-    margin-top: 2vw;
-    text-align: left;
-    color: white;
-}
 
+
+
+    
 @media (max-width:400px){
     .main{
         height: 100vh;
         width: 100vh;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.521)),url(../Assets/home.jpg);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.521)),url(../Assets/23.jpg);
         background-size: cover;
     background-position: center;
 
@@ -136,8 +107,12 @@ p{
        .btn-dark{
         width: 15vw;
        }
+       
     }
-    
+    .content{
+        display: flex;
+        flex-direction: column;
+    }
     
 
     

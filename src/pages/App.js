@@ -8,23 +8,19 @@ import Blog from './Blog'
 import Profile from './Profile'
 import PrivateRouteLayout from '../PrivateRouteLayout'
 
-
 const App = () => {
   return (
-    
-    <Router>
+     <Router>
      <Routes>
-    <Route path='/' element={<Home />} />
-    <Route path='/Contact Us' element={<Contact />} /> 
-    <Route path='/Blog' element={<Blog />} /> 
-   <Route path='/profile' element={<Profile />} />
-   <Route element={<PrivateRouteLayout/>}>
-   <Route path='/destination' element={<Destination />} />
-   </Route>
-   </Routes> 
-   </Router>
-   
+          <Route path='/' element={<Home />} />
+          <Route path='/Contact Us' element={<Contact />} /> 
+          <Route path='/Blog' element={<Blog />} /> 
+          <Route path='/profile' element={<Profile />} />
+          <Route element={<PrivateRouteLayout/>}>
+              <Route path='/destination' element={<Destination />} />
+          </Route>
+      </Routes> 
+      </Router>
   )
 }
-
 export default App

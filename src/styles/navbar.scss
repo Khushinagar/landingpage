@@ -2,10 +2,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1vw 4vw;
+    padding: .5vw 3vw;
     position: fixed;
     top: 0;
     width: 100%;  
+    // background-color: rgba(32, 178, 171, 0.834);
 h2{
  color: lightseagreen;
  font-size: xx-large;
@@ -18,7 +19,7 @@ h2{
  display: none;
 }
 .list{
- background-color:lightseagreen;
+ 
  padding: 5px;
  margin: 5px;
  display: flex;
@@ -30,7 +31,7 @@ h2{
       
 ul.list li a{
         color: lightseagreen; /* Example: Change text color */
-        margin: 5px 0; /* Example: Add margin to li elements */
+        margin: 3px 0; /* Example: Add margin to li elements */
         font-size: 20px; /* Example: Change font size */
         text-decoration: none;
         &:hover{
