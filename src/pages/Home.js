@@ -31,11 +31,11 @@ return (
         >
           <div className='carousel-img'>
             <img src={image1} alt='img1' className='c-image'/>
-            {/* <p className='legend'>...</p> */}
+            
           </div>
           <div className='carousel-img'>
             <img src={image2 }alt='img2'className='c-image'/>
-            {/* <p className='legend'>...</p> */}
+            
           </div>
           <div className='carousel-img'>
             <img src={image3} alt='img3'className='c-image'/>

@@ -1,8 +1,10 @@
-import React from 'react'
-import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
 const Navbar = () => {
-const [display, setDisplay] = useState(false)
+     const [display, setDisplay] = useState(false)
+
+
 return (
 <>
 <div className='navbar'>
@@ -15,10 +17,11 @@ return (
         <li> <Link path to='/Destination'>Destination</Link></li>
         <li> <Link path to='/Contact Us'>Contact Us</Link></li>
         <li> <Link path to='/Blog'>Blog</Link></li>
-        <li> <Link path to='/Profile'>Profile</Link></li>
+        
+                
     </ul>
 </div>   
-       <i onClick={()=>setDisplay(!display)} class="ri-menu-3-line "></i>
+      <i onClick={()=>setDisplay(!display)} className="ri-menu-3-line "></i>
 </div> 
 </>
 )
@@ -30,6 +33,38 @@ export default Navbar
 
 
 
+// import { useNavigate } from 'react-router-dom'
+// import userLogout from '../userLogout'
+// import userLogin from '../userLogin'
+
+// const [toggle, setToggle] = useState(true)
+// const [isLoggedIn, setIsLoggedIn] = useState(true) //ha 
+// const navigate = useNavigate();
+// const {error, logout} = userLogout();
+// const {err, login} = userLogin();
+// const handleLogout = async ()=>
+//    { 
+//      setIsLoggedIn(false)
+//     await logout(); 
+//     if(!error)
+//     {navigate("/")}
+//   }
+//    console.log(isLoggedIn);
+
+//   const handleLogin = async ()=>
+//    {
+
+//     await login(); 
+//     if(!err)
+//     {navigate("/profile")}
+    
+//   } 
+
+//   const handleToggle = () =>{
+//     setToggle(!toggle);
+    
+//   } <li> <button  type='submit' onClick={toggle? handleLogout :handleLogin}>
+        // {isLoggedIn ? "logout" : "login"}</button></li> 
 
 
 

@@ -77,9 +77,14 @@ p{
         background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.521)),url(../Assets/23.jpg);
         background-size: cover;
     background-position: center;
+    .content{
+        display: flex;
+        flex-direction: column;
+    }
 
     }
     .right-div{ 
+        
        h1{
         font-size: 4vh;
             >img{
@@ -109,10 +114,7 @@ p{
        }
        
     }
-    .content{
-        display: flex;
-        flex-direction: column;
-    }
+    
     
 
     

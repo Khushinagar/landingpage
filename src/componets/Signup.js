@@ -1,19 +1,15 @@
 import React, {useState} from 'react';
 import Navbar from './Navbar';
-
 const Signup = (props) => {
   const [name, setName]= useState("");
   const [email, setEmail]= useState("");
   const [password, setPassword] = useState("");
- 
 return (
 <>
 <Navbar />
-    
-
 <div className='signup-form'>
      <h1> create your account</h1>
-     <form>
+<form>
           <input type='text' placeholder='enter name' 
           value={name}
           onChange={(e)=>setName(e.target.value)}
@@ -27,9 +23,9 @@ return (
           onChange={(e)=>setPassword(e.target.value)}
           />
           <button  type='submit'>signup</button>
-     </form>
-          <p> have an account?</p>
-          <button onClick={props.toggleForm}>login</button>
+</form>
+     <p> have an account?</p>
+     <button onClick={props.toggleForm}>login</button>
 </div>
 </>
 )

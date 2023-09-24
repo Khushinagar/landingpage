@@ -6,6 +6,7 @@ import { useNavigate, useLocation } from 'react-router-dom'
 
 
 const Login = (props) => {
+     
   const [email, setEmail]= useState("");
   const [password, setPassword] = useState("");
   const [errorMessage, setErrorMessage] = useState(null);
@@ -19,20 +20,21 @@ const Login = (props) => {
         await login(email, password);
         if (!error)
         {
-        navigate(from, {replace:true});
-        setEmail("");
-        setPassword(" ");
+          setEmail("");
+          setPassword("");
+          navigate(from, {replace:true});
         return;
-        }else{
-        setErrorMessage(error)
-       }
+        }else
+            {
+            setErrorMessage(error)
+            }
       }
-return (
+return(
 <>
 <Navbar />
-  <div className='login-form'>
-      <h1> log in to your account</h1>
-  <form onSubmit= {handleLogin} >
+<div className='login-form'>
+      {/* <h1> log in to your account</h1> */}
+<form onSubmit= {handleLogin} >
       <input type='email' placeholder='enter email'  
       value={email}
       onChange={(e)=>setEmail(e.target.value)}
@@ -42,16 +44,20 @@ return (
       onChange={(e)=>setPassword(e.target.value)}
       />
       {error && <p>{errorMessage}</p>}
-      <button type='submit' >login</button>
-   </form>
-      <p> have no account?</p>
+      <button type='submit'className='login-btn' >login</button>
+      </form>
+      <p> have no account?</p> 
       <button onClick={props.toggleForm}>sign up</button>
-  </div>
+</div>
+
 </>
 )
 }
 
 export default Login
+
+
+
  
 // const [submitted, setSubmitted] = useState(false)
 // const handleLogin = async (e) => {

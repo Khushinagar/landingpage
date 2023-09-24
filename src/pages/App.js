@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React  from 'react'
 import '../styles/app.scss'
 import Home from './Home'
 import { BrowserRouter as Router ,   Routes, Route } from 'react-router-dom'
@@ -16,8 +16,8 @@ const App = () => {
           <Route path='/Contact Us' element={<Contact />} /> 
           <Route path='/Blog' element={<Blog />} /> 
           <Route path='/profile' element={<Profile />} />
-          <Route element={<PrivateRouteLayout/>}>
               <Route path='/destination' element={<Destination />} />
+          <Route element={<PrivateRouteLayout/>}>
           </Route>
       </Routes> 
       </Router>
