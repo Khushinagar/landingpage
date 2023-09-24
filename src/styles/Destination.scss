@@ -113,11 +113,10 @@ body{
     padding: 0;
 
     .navbar-section{
-      height: 8.9vh;
+      height: 5vh;
       width: 100%;
       background-color:lightseagreen;
-      margin: 0;
-      padding: 0;
+      
          }
     
     .section-1{
@@ -140,4 +139,25 @@ body{
     background-color: white;
    
   }
-}
+
+  .section-2{
+    .hr-text {
+      line-height: 1em;
+      height: 1.5em;
+      opacity: 1;
+      &:before {
+        content: '';
+        background: linear-gradient(to right, transparent,lightseagreen, transparent);
+        height: 2px;
+      }
+      &:after {
+        content: attr(data-content);
+        line-height: 2em;
+        font-size: 2.5vw;
+        
+      }
+    }
+  }
+  
+  }
+

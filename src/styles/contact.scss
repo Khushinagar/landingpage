@@ -6,7 +6,6 @@
         color: white;
         font-size: 5vw;
         margin-left: 2vw;
-       
     }
 }
 
@@ -55,24 +54,25 @@ form{
   }
 
 
-  @media (max-width:500px) {
+  @media (max-width:450px) {
     
     main{
         position: absolute;
         top: 20vh;
-        left: 25vw;
+        left: 15vw;
     }
     form{ 
         margin-top: 4vh;
         label{
            
-            width: 25vh;
+            width: 15vh;
             font-weight: 400;
+            font-size: 4vw;
         }
-        input{
+        .input-contact{
             align-self: stretch;
-            width: 28vh;
-            margin: 1.5vh;
+            width: 15vh;
+            margin-bottom: 3vh;
             text-align: justify;
         }
     }
@@ -82,3 +82,5 @@ form{
     }
     
 }
+
+

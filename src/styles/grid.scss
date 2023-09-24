@@ -39,7 +39,7 @@
 @media (max-width:450px) {
     .img-grid{
         display: grid;
-        grid: 180px / auto auto auto auto;
+        grid: 100px 100px 100px/ auto auto auto ;
         grid-gap: 1px;
         justify-content: space-evenly;
         margin-top: 3vw; 

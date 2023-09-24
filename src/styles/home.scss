@@ -70,53 +70,61 @@ p{
 
 
     
-@media (max-width:400px){
+@media (max-width:450px){
     .main{
         height: 100vh;
-        width: 100vh;
+        width: 100%;
         background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.521)),url(../Assets/23.jpg);
         background-size: cover;
     background-position: center;
-    .content{
+    
+
+    }
+    .right-div{
+        height: 50vh;
+        width: 100%;     
+    }
+
+    .left-div{
+display: none;         
+    }
+    
+    .right-div-content{
+        position: absolute;
+        top: 20vh;
+        left: 0%;
+        margin: 10px;
         display: flex;
         flex-direction: column;
-    }
-
-    }
-    .right-div{ 
-        
-       h1{
-        font-size: 4vh;
-            >img{
-                height: 7vh;
-                width: 25vw;
-                font-weight: 900;
-        
-            }
-        }
-        &:hover{
-            transition: all 1s;
-            color: lightseagreen;
-           
-        }
-       
-       p{
+        gap: 20px;
+    h1{
+        color: white;
+        text-transform: uppercase;
+        font-size: 13vw;
+        text-align: center;
+        line-height: 1.5em;
+    >span{
+        font-size: 18vw;
+    >img{
+        height: 10vh;
+        width: 20vw;
+        font-weight: 900;
+    }}
+    &:hover{
+        transition: all 1s;
+        color: lightseagreen;
+    }}
+    p{
         color: white;
         text-align: justify;
-        width: 60vw;
-        margin-top: 1.5vw;
-        font-size: 2vw;
+        width: 80%;
 
+              margin: 10px;
+        font-size: 4vw;
         
-       }
-       .btn-dark{
-        width: 15vw;
-       }
-       
     }
-    
-    
-
+    }
     
     
 }
+                                                                                                                                                                                    

@@ -44,7 +44,7 @@
 @media (max-width:450px) {
     .content-section{
         display: grid;
-        grid-template-columns: 90px 90px 90px;
+        grid: 230px / auto auto auto ;
         justify-content: space-evenly;
     }
     
